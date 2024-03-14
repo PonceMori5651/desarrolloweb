@@ -12,6 +12,7 @@ footer{
     font-optical-sizing: auto;
     font-weight: 750;
     font-style: normal;
+    border-radius: 10px;
 }
 footer a:hover{
     color: #ff6900;
