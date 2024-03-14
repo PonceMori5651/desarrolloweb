@@ -1,0 +1,152 @@
+
+#ul_menu,#ul_submenu{
+    list-style-type: none;
+    display: flex;
+}
+nav{
+    width: 100%;
+}
+#ul_menu li a:hover{
+    color: #ff6900;
+}
+
+#ul_menu{
+    justify-content: space-evenly;
+    align-items: center;
+}
+#ul_menu #li_menu{
+    height: 84px;
+    position: relative;
+    top: 33.5px;
+}
+#ul_submenu{
+    flex-direction: column;
+    display:none;
+    position: absolute;
+    left: 41%;
+    top: 50%;
+    width: 215px;
+    padding: 1rem;
+    animation-duration: 1s;
+    animation-name: aparecer;
+    background-color: white;
+}
+
+@keyframes aparecer {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+#ul_submenu li {
+    position: relative;
+    padding: 5px;
+    font-size: 13px;
+}
+
+#ul_menu li:hover ul, #ul_submenu:hover{
+    display:block;
+    transition: 8s all;
+}
+#ul_menu li a{
+    text-decoration: none;
+    color: white;
+    transition-duration: 0.7s;
+ }
+#ul_submenu li a{
+   text-decoration: none;
+   color: rgb(105, 102, 135);
+   transition-duration: 0.7s;
+}
+#logo{
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+    width: 5rem;
+    
+}
+#contenedorBanner{
+    width: 100%;
+    height: 740px;
+    background-image: url("/images/bannerInicio.jpg");
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 300px;
+    color: rgb(255, 255, 255);
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 750;
+    font-style: normal;
+}
+.textoBanner{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    color: rgb(255, 76, 108);
+    background: linear-gradient(75deg,#FF4C6C,#FA9D4D 80%);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-align: center;
+    font-size: 80px;
+}
+
+#informationBanner{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:center;
+}
+#buttonContacto{
+    padding: 10px 15px 10px 15px;
+    margin-top: 50px;
+    border-radius: 5px;
+    font-weight: 700;
+    transition-duration: 0.7s;
+    animation: buttonHover 2s infinite;
+}
+#buttonContacto:hover{
+    background-color:#6254e7;
+    color: white;
+    animation-duration: 2s;
+}
+
+#textoBannerAnimation::before{
+    content: '';
+    animation: changingTxt 15s linear infinite;
+}
+
+@keyframes changingTxt {
+    0%{
+        content: "Página Web";
+    }
+    33.3%{
+        content: 'Tienda Online';
+    }
+    66.6%{
+        content: 'Campaña';
+    }
+    100%{
+        content: 'Camino al Éxito';
+    }
+}
+
+@keyframes buttonHover {
+    0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(86, 52, 230, 0.7);
+    }
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 30px rgba(26, 51, 244, 0);
+    }
+    100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(26, 51, 244, 0);
+    }
+}

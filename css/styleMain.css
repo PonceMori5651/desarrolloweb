@@ -1,0 +1,35 @@
+.imgInformation{
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+    width: 14rem;
+}
+#information{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 750;
+    font-style: normal;
+    
+}
+#information h3{
+    color: #091675;
+    margin-bottom: 10px;
+}
+#information h1{
+    color: white;
+    font-size: 50px;
+    font-weight: 900;
+    position: relative;
+    bottom: 180px;
+    right: 10px;
+
+}
+#information p,a{
+    color: #7A7A7A;
+    font-weight: 100;
+    margin-bottom: 25px;
+    width: 300px;
+}
