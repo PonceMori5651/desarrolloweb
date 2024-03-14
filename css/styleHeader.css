@@ -76,7 +76,7 @@ nav{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 300px;
+    padding-bottom: 250px;
     color: rgb(255, 255, 255);
     font-family: "Nunito", sans-serif;
     font-optical-sizing: auto;
@@ -99,8 +99,8 @@ nav{
 #informationBanner{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items:center;
+    justify-content: center;
+    align-items: center;
 }
 #buttonContacto{
     padding: 10px 15px 10px 15px;
