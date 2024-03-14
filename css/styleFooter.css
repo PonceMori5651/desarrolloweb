@@ -4,7 +4,7 @@ footer{
     flex-direction: column;
     row-gap: 15px;
     padding: 0px 70px 5px 70px;
-    background-image: url("/images/footerFondo.jpg");
+    background-image: url("images/footerFondo.jpg");
     justify-content: space-between;
     align-items: center;
     color: rgb(255, 255, 255);
