@@ -1,35 +1,74 @@
 .imgInformation{
-    filter: brightness(1.1);
-    mix-blend-mode: multiply;
-    width: 14rem;
+    width: 233px;
 }
+
 #information{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    text-align: center;
+    margin: 0px 11% 0px 11%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     font-family: "Nunito", sans-serif;
     font-optical-sizing: auto;
     font-weight: 750;
     font-style: normal;
-    
+    text-align: center;
+    gap: 50px;
+    padding: 0px 40px 0px 40px;
 }
 #information h3{
     color: #091675;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
-#information h1{
-    color: white;
-    font-size: 50px;
-    font-weight: 900;
-    position: relative;
-    bottom: 180px;
-    right: 10px;
 
+#information p{
+    color: #696687;
+    font-size: 16px;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
 }
-#information p,a{
-    color: #7A7A7A;
-    font-weight: 100;
-    margin-bottom: 25px;
-    width: 300px;
+.separarInformationLink{
+    padding-bottom: 20px;
+}
+
+#information a{
+    color: #6B5EE9;
+    font-size: 12px;
+    font-family: inherit;
+}
+#positionH1Images{
+    position: relative;
+    margin: 20px 0px 20px 0px;
+}
+#h1Imagen{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 10% 0px 11%;
+    color: white;
+    top: 55px;
+    font-size: 28px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+#h1Imagen01{
+    position: relative;
+    left: 5px;
+}
+#h1Imagen02{
+    position: relative;
+    left: 20px;
+}
+#h1Imagen03{
+    position: relative;
+    right: 5px;
+}
+#informationDigital,#informationTiendaOnline,#informationPagWeb{
+    margin-bottom: 50px;
 }
