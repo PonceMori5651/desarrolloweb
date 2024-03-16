@@ -46,10 +46,10 @@ footer a:hover{
     width: 100%;
     display: flex;
     flex-wrap: 5px;
-    column-gap: 50px;
+    column-gap: 130px;
     border-bottom: 1px solid white;
     justify-content: center;
-    padding-bottom: 15px;
+    padding-bottom: 15px
 }
 #infoServicios,#infoComunidad,#infoSecciones{
     display: flex;
