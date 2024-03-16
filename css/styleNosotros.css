@@ -1,0 +1,201 @@
+header {
+    position: relative; /* Ajusta el encabezado a una posición relativa */
+    background-color: #ffffff; /* Cambia el color de fondo del encabezado */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Agrega una sombra suave */
+}
+
+#contenedorBanner {
+    padding: 110px 20px; /* Ajusta el relleno para el contenido dentro del banner */
+    text-align: center;
+    background-image: url("../images/banner.jpg"); /* Centra el texto dentro del banner */
+}
+
+#nosotrosTitle {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 80px;
+    color: white;
+   
+}
+
+#subtitles {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500; /* Ajusta el peso de la fuente según sea necesario */
+    font-size: 1.5rem;
+    color: rgb(255, 76, 108); /* Ajusta el tamaño del texto según sea necesario */
+     /* Cambia el color del subtítulo */
+}
+
+
+#nosotrosTitle {
+    font-size: 2rem; /* Ajusta el tamaño del título de "Nosotros" */
+    margin-bottom: 10px;
+    color: white; /* Agrega un margen inferior */
+}
+
+#subtitles {
+    font-size: 1rem; /* Ajusta el tamaño del subtítulo */
+    color:white; /* Cambia el color del subtítulo */
+}
+
+/* Estilos para la sección de contacto */
+.redesDeContactos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px; /* Ajusta el relleno según sea necesario */
+    background-color: white; /* Cambia el color de fondo según sea necesario */
+    border-bottom: 1px solid #ccc; /* Línea suave debajo */
+}
+
+.redesDeContactos i {
+    margin-right: 10px; /* Agrega espacio entre los íconos */
+}
+
+.redesDeContactos > div {
+    display: flex;
+    align-items: center;
+}
+
+.redesDeContactos #fono,
+.redesDeContactos #mail {
+    margin-right: 20px; /* Espacio entre los íconos de teléfono y correo electrónico */
+}
+
+.redesDeContactos .redes {
+    display: flex;
+    flex-direction: row;
+}
+
+.redesDeContactos .redes i {
+    margin-right: 10px; /* Espacio entre los íconos de las redes sociales */
+}
+
+
+
+
+#ul_menu,#ul_submenu{
+    list-style-type: none;
+    display: flex;
+}
+nav{
+    width: 100%;
+    background-color: #ffffff; /* Cambia el color de fondo del nav */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+#ul_menu li a:hover{
+    color: #ff6900;
+}
+
+#ul_menu{
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+    display: flex;
+    padding: 10px 20px;
+}
+#ul_menu #li_menu{
+    height: 84px;
+    position: relative;
+    top: 33.5px;
+    margin-right: 20px;
+}
+#ul_submenu{
+    flex-direction: column;
+    display:none;
+    position: absolute;
+    left: 41%;
+    top: 50%;
+    width: 215px;
+    padding: 1rem;
+    animation-duration: 1s;
+    animation-name: aparecer;
+    background-color: white;
+}
+
+@keyframes aparecer {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+#ul_submenu li {
+    position: relative;
+    padding: 5px;
+    font-size: 13px;
+}
+
+#ul_menu li:hover ul, #ul_submenu:hover{
+    display:block;
+    transition: 8s all;
+}
+#ul_menu li a{
+    text-decoration: none;
+    color: #333333; /* Cambia el color del texto del menú para aumentar el contraste */
+    font-weight: bold; /* Añade negrita para hacer el texto más visible */
+    transition: color 0.3s;
+    transition-duration: 0.7s;
+ }
+#ul_submenu li a{
+   text-decoration: none;
+   color: rgb(105, 102, 135);
+   transition-duration: 0.7s;
+}
+
+#logo{
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+    width: 5rem;
+    
+}
+main {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-top: 20px; /* Espacio de 20px por encima del banner */
+}
+
+.tarjeta {
+    width: 350px; /* Ancho fijo para las tarjetas */
+    background-color: #f9f9f9; /* Color de fondo de las tarjetas */
+    text-align: center;
+    padding: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin-top: -20px; /* Desplaza las tarjetas hacia arriba para superponer el banner */
+    margin-bottom: 75px; /* Espacio por debajo de las tarjetas */
+    position: relative; /* Para que la punta se posicione correctamente */
+}
+
+.tarjeta::before {
+    content: '';
+    position: absolute;
+    top: -15px; /* Ajusta la posición de la punta arriba de la tarjeta */
+    left: 50%; /* Centra la punta horizontalmente */
+    transform: translateX(-50%); /* Centra la punta horizontalmente */
+    border-style: solid;
+    border-width: 15px 10px; /* Tamaño de la punta */
+    border-color: transparent transparent #f9f9f9; /* Color de la punta */
+}
+
+.tarjeta h2 {
+    font-size: 18px; /* Tamaño del título */
+    margin-bottom: 10px; /* Espacio inferior del título */
+}
+
+.tarjeta img {
+    max-width: 45%; /* Tamaño máximo de la imagen */
+    height: auto; /* Ajusta automáticamente la altura para mantener la proporción */
+}
+
+.tarjeta p {
+    margin-top: 10px; /* Espacio entre la imagen y el texto */
+}
+
+
+
+
+  
