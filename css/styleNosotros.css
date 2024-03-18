@@ -1,10 +1,10 @@
-header {
+#idHeader {
     position: relative; /* Ajusta el encabezado a una posición relativa */
     background-color: #ffffff; /* Cambia el color de fondo del encabezado */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Agrega una sombra suave */
 }
 
-#contenedorBanner {
+#contenedorBannerv2 {
     padding: 110px 20px; /* Ajusta el relleno para el contenido dentro del banner */
     text-align: center;
     background-image: url("../images/banner.jpg"); /* Centra el texto dentro del banner */
@@ -13,30 +13,24 @@ header {
 #nosotrosTitle {
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
-    font-size: 80px;
     color: white;
-   
+    font-size: 2rem; /* Ajusta el tamaño del título de "Nosotros" */
+    margin-bottom: 10px;
+
 }
 
 #subtitles {
     font-family: "Montserrat", sans-serif;
     font-weight: 500; /* Ajusta el peso de la fuente según sea necesario */
-    font-size: 1.5rem;
     color: rgb(255, 76, 108); /* Ajusta el tamaño del texto según sea necesario */
-     /* Cambia el color del subtítulo */
-}
-
-
-#nosotrosTitle {
-    font-size: 2rem; /* Ajusta el tamaño del título de "Nosotros" */
-    margin-bottom: 10px;
-    color: white; /* Agrega un margen inferior */
-}
-
-#subtitles {
     font-size: 1rem; /* Ajusta el tamaño del subtítulo */
     color:white; /* Cambia el color del subtítulo */
 }
+
+
+
+
+
 
 /* Estilos para la sección de contacto */
 .redesDeContactos {
@@ -75,27 +69,27 @@ header {
 
 
 
-#ul_menu,#ul_submenu{
+#ul_menuV2,#ul_submenu{
     list-style-type: none;
     display: flex;
 }
-nav{
+#idNav{
     width: 100%;
     background-color: #ffffff; /* Cambia el color de fondo del nav */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-#ul_menu li a:hover{
+#ul_menuV2 li a:hover{
     color: #ff6900;
 }
 
-#ul_menu{
+#ul_menuV2{
     justify-content: space-evenly;
     align-items: center;
     list-style-type: none;
     display: flex;
     padding: 10px 20px;
 }
-#ul_menu #li_menu{
+#ul_menuV2 #li_menu{
     height: 84px;
     position: relative;
     top: 33.5px;
@@ -129,11 +123,11 @@ nav{
     font-size: 13px;
 }
 
-#ul_menu li:hover ul, #ul_submenu:hover{
+#ul_menuV2 li:hover ul, #ul_submenu:hover{
     display:block;
     transition: 8s all;
 }
-#ul_menu li a{
+#ul_menuV2 li a{
     text-decoration: none;
     color: #333333; /* Cambia el color del texto del menú para aumentar el contraste */
     font-weight: bold; /* Añade negrita para hacer el texto más visible */
