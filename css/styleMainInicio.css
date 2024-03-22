@@ -72,3 +72,43 @@
 #informationDigital,#informationTiendaOnline,#informationPagWeb{
     margin-bottom: 50px;
 }
+
+#caminoExito{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0px 11% 0px 11%;
+    margin: 100px 0px 100px 0px;
+}
+#imgCaminoExito{
+    width: auto;
+    height: auto;
+}
+#txtCaminoExito{
+    width: 550px;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 750;
+    font-style: normal;
+    line-height: 30px;
+    color: #3b3663;
+}
+#txtCaminoExito h5{
+    margin-bottom: 5px;
+}
+#txtCaminoExito h1{
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+
+#txtCaminoExito h6{
+    margin-bottom: 5px;
+    color: #696687;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+#txtCaminoExito p{
+    color: #696687;
+    font-weight: 100;
+}

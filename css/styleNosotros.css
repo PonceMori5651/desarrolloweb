@@ -146,11 +146,11 @@
     width: 5rem;
     
 }
-main {
+#main {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
-    padding-top: 20px; /* Espacio de 20px por encima del banner */
+    padding-top: 20px; /* Espacio de 20px por encima del banner  */
 }
 
 .tarjeta {
